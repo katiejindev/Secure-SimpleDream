@@ -1,0 +1,44 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+.topbar{
+  background-color: $light-blue;
+  border-bottom: 5px solid $very-dark-blue;
+  height: 75px;
+
+  .button-container{
+    float: right;
+    height: 100%;
+  }
+
+  .logo{
+    float: left;
+  }
+
+  ul{
+    margin: 0px;
+    height: 100%;
+    list-style: none;
+
+    a{
+      color: black;
+    }
+  }
+
+  li{
+    float:right;
+    width: 200px;
+    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 75px;
+    text-align: center;
+
+    &:hover {
+      background-color: darken($light-blue, 5%);
+      cursor: pointer;
+    }
+  }
+}
