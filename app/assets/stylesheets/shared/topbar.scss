@@ -9,6 +9,16 @@ html, body{
   border-bottom: 5px solid $very-dark-blue;
   height: 75px;
 
+  .logo{
+    height: 100%;
+    padding: 0 20px;
+
+    img {
+      height: 100%;
+      margin-top: 10px;
+    }
+  }
+
   .button-container{
     float: right;
     height: 100%;
@@ -22,6 +32,7 @@ html, body{
     margin: 0px;
     height: 100%;
     list-style: none;
+    padding: 0px;
 
     a{
       color: black;
