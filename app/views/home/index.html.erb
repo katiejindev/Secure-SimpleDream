@@ -1,3 +1,9 @@
 <div class="content-window">
-
+  <div class="owl-carousel">
+    <% @products.each do |product| %>
+      <div>
+        <%= image_tag product.image_path %>
+      </div>
+    <% end %>
+  </div>
 </div>
