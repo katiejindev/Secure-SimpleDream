@@ -1,13 +1,9 @@
-<nav class="topbar">
-  <div class="logo">
-
+<div class="content-window">
+  <div class="owl-carousel">
+    <% @products.each do |product| %>
+      <div>
+        <%= image_tag product.image_path %>
+      </div>
+    <% end %>
   </div>
-  <div class="button-container">
-    <ul>
-      <a href="#"><li>Client Login</li></a>
-      <a href="#"><li>Contact Us</li></a>
-      <a href="#"><li>About Us</li></a>
-      <a href="#"><li>Our Products</li></a>
-    </ul>
-  </div>
-</nav>
+</div>

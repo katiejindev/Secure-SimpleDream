@@ -6,3 +6,8 @@ $light-blue: #c3c3e1;
 $very-light-blue: #ccccff;
 
 @import 'shared/topbar';
+@import 'shared/background';
+@import 'shared/content_window';
+@import 'home/slider';
+@import 'owl.carousel';
+@import 'owl.theme';

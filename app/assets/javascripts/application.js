@@ -11,6 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require owl.carousel
 //= require jquery_ujs
 //= require turbolinks
+//= require_self
 //= require_tree .
+
+//Initialization
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    items: 4,
+    autoPlay: 3000
+  });
+});
