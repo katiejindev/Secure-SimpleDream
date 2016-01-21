@@ -2,6 +2,7 @@
   <h1 class="title">
     Welcome to Simple Dream Publishing!
   </h1>
+
   <div class="owl-carousel">
     <% @products.each do |product| %>
       <div>
@@ -9,4 +10,6 @@
       </div>
     <% end %>
   </div>
+
+  <%= render 'featured_products', products: @featured_products %>
 </div>

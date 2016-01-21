@@ -1,0 +1,35 @@
+.featured-products {
+  .featured-product {
+    height: 650px;
+    color: $very-light-blue;
+    font-size: 150%;
+    margin-bottom: 40px;
+
+    img {
+      height: 100%
+    }
+
+    .text-area {
+      display: table-cell;
+      height: 650px;
+      padding: 20px;
+      vertical-align: middle;
+      text-align: center;
+      overflow: ellipsis;
+    }
+
+    &.left {
+      img {
+        float: left;
+        margin-right: 20px;
+      }
+    }
+
+    &.right {
+      img {
+        float: right;
+        margin-left: 20px;
+      }
+    }
+  }
+}
