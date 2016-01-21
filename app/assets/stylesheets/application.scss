@@ -5,9 +5,16 @@ $base-blue: #6666cc;
 $light-blue: #c3c3e1;
 $very-light-blue: #ccccff;
 
+//shared
+@import 'shared/typography';
 @import 'shared/topbar';
 @import 'shared/background';
 @import 'shared/content_window';
+
+//home page
 @import 'home/slider';
+@import 'home/featured_products';
+
+//imports
 @import 'owl.carousel';
 @import 'owl.theme';
