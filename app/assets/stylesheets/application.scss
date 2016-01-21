@@ -5,6 +5,7 @@ $base-blue: #6666cc;
 $light-blue: #c3c3e1;
 $very-light-blue: #ccccff;
 
+@import 'shared/typography';
 @import 'shared/topbar';
 @import 'shared/background';
 @import 'shared/content_window';
