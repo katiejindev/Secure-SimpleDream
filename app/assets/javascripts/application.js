@@ -24,11 +24,26 @@
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     items: 4,
+    margin: 30,
     autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 450,
     loop: true,
     center: true,
-    lazyLoad: true
+    lazyLoad: true,
+    responsive: {
+      0:{
+        items: 1,
+        margin: 0
+      },
+      600:{
+        items: 3,
+        margin: 15
+      },
+      1200: {
+        items: 4,
+        margin: 30
+      }
+    }
   });
 });
