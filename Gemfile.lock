@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/acrogenesis/owlcarousel-rails.git
+  revision: 2dd679c61b795fa08003994c74d140c214781141
+  branch: OwlCarousel2
+  specs:
+    owlcarousel-rails (1.1.3.3)
+      jquery-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -81,8 +89,6 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
-    owlcarousel-rails (1.1.3.3)
-      jquery-rails
     pg (0.18.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -188,7 +194,7 @@ DEPENDENCIES
   factory_girl_rails
   jbuilder (~> 2.0)
   jquery-rails
-  owlcarousel-rails
+  owlcarousel-rails!
   pg
   pry-byebug
   pry-rails

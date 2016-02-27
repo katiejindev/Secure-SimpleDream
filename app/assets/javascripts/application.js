@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require owl.carousel
+//= require owl.navigation
+//= require owl.lazyload
+//= require owl.autoplay
 //= require jquery_ujs
 //= require turbolinks
 //= require_self
@@ -21,6 +24,11 @@
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     items: 4,
-    autoPlay: 3000
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 450,
+    loop: true,
+    center: true,
+    lazyLoad: true
   });
 });
