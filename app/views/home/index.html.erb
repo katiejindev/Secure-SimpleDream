@@ -3,10 +3,10 @@
     Welcome to Simple Dream Publishing!
   </h1>
 
-  <div class="owl-carousel">
+  <div class="owl-carousel owl-theme">
     <% @products.each do |product| %>
       <div>
-        <%= image_tag product.image_path %>
+        <%= image_tag product.slider_path %>
       </div>
     <% end %>
   </div>
