@@ -1,0 +1,27 @@
+<nav class="topbar">
+  <div class="logo">
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+  </div>
+
+  <div class="button-container">
+    <ul>
+      <li><a href="#">Client Login</a></li>
+
+      <li><a href="#">Contact Us</a></li>
+
+      <li><%= link_to about_path do %>About Us<% end %></li>
+
+      <li class="dropdown">
+        <a href="#">Our Products</a>
+
+        <ul>
+          <li><a href="#">Pacific North West First Nation Art</a></li>
+          <li><a href="#">Ketto</a></li>
+          <li><a href="#">Value Creating Communication</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

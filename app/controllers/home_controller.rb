@@ -3,4 +3,7 @@ class HomeController < ApplicationController
     @products = Product.all
     @featured_products = Product.featured
   end
+
+  def about
+  end
 end

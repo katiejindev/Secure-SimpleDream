@@ -35,21 +35,51 @@ html, body{
     padding: 0px;
 
     a{
+      text-decoration: none;
       color: black;
+      display: block;
+      padding: 0 20px;
+      font-size: 125%;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 75px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($light-blue, 5%);
+        cursor: pointer;
+      }
     }
   }
 
   li{
     float:right;
-    padding: 0 40px;
-    font-size: 125%;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 75px;
-    text-align: center;
+    display: inline-block;
+  }
 
+  .dropdown {
     &:hover {
+      ul {
+        display: block;
+      }
+
+      &> a {
+        border-bottom: 5px solid darken($light-blue, 5%);
+        background-color: darken($light-blue, 5%);
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      display: none;
       background-color: darken($light-blue, 5%);
-      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 80px;
+      height: auto;
+
+      a:hover {
+        background-color: $light-blue;
+      }
     }
   }
 }
