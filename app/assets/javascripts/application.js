@@ -21,7 +21,7 @@
 //= require_tree .
 
 //Initialization
-$(document).ready(function() {
+function document_init() {
   $(".owl-carousel").owlCarousel({
     items: 4,
     margin: 30,
@@ -46,4 +46,7 @@ $(document).ready(function() {
       }
     }
   });
-});
+};
+
+$(document).ready(document_init);
+$(document).on('page:load', document_init);

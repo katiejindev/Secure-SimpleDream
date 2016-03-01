@@ -1,6 +1,8 @@
 <nav class="topbar">
   <div class="logo">
-    <%= image_tag 'logo.png' %>
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
   </div>
 
   <div class="button-container">
@@ -9,7 +11,7 @@
 
       <li><a href="#">Contact Us</a></li>
 
-      <li><a href="#">About Us</a></li>
+      <li><%= link_to about_path do %>About Us<% end %></li>
 
       <li class="dropdown">
         <a href="#">Our Products</a>
