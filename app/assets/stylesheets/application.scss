@@ -6,13 +6,13 @@ $light-blue: #c3c3e1;
 $very-light-blue: #ccccff;
 
 //shared
-@import 'shared/typography';
-@import 'shared/topbar';
-@import 'shared/background';
-@import 'shared/content_window';
+@import 'shared/*';
 
 //home page
-@import 'home/featured_products';
+@import 'home/*';
+
+//about page
+@import 'about/*';
 
 //imports
 @import 'owl.carousel';
