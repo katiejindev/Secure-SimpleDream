@@ -1,2 +1,7 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h1 class="title"><%= @category.name %></h1>
+
+<%= render 'shared/products_slider', products: @products %>
+
+<div class="about-content">
+  <p><%= @category.description %></p>
+</div>
