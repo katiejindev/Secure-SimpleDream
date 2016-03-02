@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get 'About', to: 'home#about', as: 'about'
 
+  resources :products, only: [:index, :show]
+
+  resources :categories, only: [:index, :show]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
