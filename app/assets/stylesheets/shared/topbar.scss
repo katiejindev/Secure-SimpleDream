@@ -57,6 +57,8 @@ html, body{
   }
 
   .dropdown {
+    position: relative;
+
     &:hover {
       ul {
         display: block;
@@ -73,13 +75,18 @@ html, body{
       display: none;
       background-color: darken($light-blue, 5%);
       position: absolute;
-      right: 0px;
-      top: 80px;
+      min-width: 100%;
       height: auto;
+      white-space: nowrap;
 
       a:hover {
         background-color: $light-blue;
       }
+    }
+
+    li {
+      float: none;
+      min-width: 100%;
     }
   }
 }
