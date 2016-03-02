@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  has_and_belongs_to_many :categories
+
   validates :name, presence: true
   validates :SKU, presence: true
   validates :image_path, presence: true
