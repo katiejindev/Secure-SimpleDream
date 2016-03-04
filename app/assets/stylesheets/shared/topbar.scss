@@ -73,6 +73,7 @@ html, body{
 
     ul {
       display: none;
+      z-index: 1001;
       background-color: darken($light-blue, 5%);
       position: absolute;
       min-width: 100%;
