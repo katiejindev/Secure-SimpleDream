@@ -88,6 +88,10 @@ html, body{
       float: none;
       min-width: 100%;
       display: block;
+
+      a {
+        text-align: left;
+      }
     }
   }
 }
