@@ -1,0 +1,11 @@
+<h1 class="title">Login</h1>
+
+<div class="login-form">
+  <%= form_tag do %>
+    <%= label_tag :usr, "Username: " %>
+    <%= text_field_tag :usr %>
+    <%= label_tag :pswd, "Password: " %>
+    <%= text_field_tag :pswd %>
+    <%= submit_tag %>
+  <% end %>
+</div>
