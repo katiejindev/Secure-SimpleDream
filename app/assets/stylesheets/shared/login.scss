@@ -1,0 +1,21 @@
+.login-form {
+  margin: 0 auto;
+  width: 40%;
+
+  label {
+    display: block;
+    color: white;
+    font-size: 175%;
+    margin-bottom: 5px;
+    width: 100%
+  }
+
+  input {
+    display: block;
+    border-radius: 3px;
+    font-size: 150%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 100%
+  }
+}

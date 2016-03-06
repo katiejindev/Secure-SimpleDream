@@ -7,14 +7,14 @@
 
   <div class="button-container">
     <ul>
-      <li><a href="#">Client Login</a></li>
+      <li><%= link_to "Client Login", login_path %></li>
 
       <li><a href="#">Contact Us</a></li>
 
       <li><%= link_to about_path do %>About Us<% end %></li>
 
       <li class="dropdown">
-        <a href="#">Our Products</a>
+        <%= link_to "Our Products", products_path %>
 
         <ul>
           <% Category.all.each do |category| %>

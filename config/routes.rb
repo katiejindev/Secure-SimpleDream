@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get 'About', to: 'home#about', as: 'about'
 
+  get 'login' => 'home#login'
+  post 'login' => 'home#attempt_login'
+
   resources :products, only: [:index, :show]
 
   resources :categories, only: [:index, :show]
