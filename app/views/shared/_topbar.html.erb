@@ -14,7 +14,7 @@
       <li><%= link_to about_path do %>About Us<% end %></li>
 
       <li class="dropdown">
-        <a href="#">Our Products</a>
+        <%= link_to "Our Products", products_path %>
 
         <ul>
           <% Category.all.each do |category| %>
