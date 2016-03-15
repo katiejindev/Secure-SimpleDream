@@ -26,6 +26,33 @@
 
 //Initialization
 function document_init() {
+  if ($("#custom-owl-pagination").length) {
+    $(".main-slider").owlCarousel({
+      dotsContainer: "#custom-owl-pagination",
+      items: 4,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      smartSpeed: 3000,
+      loop: true,
+      center: true,
+      lazyLoad: false,
+      responsive: {
+        0:{
+          items: 1,
+          margin: 0
+        },
+        600:{
+          items: 3,
+          margin: 15
+        },
+        1200: {
+          items: 4,
+          margin: 30
+        }
+      }
+    });
+  }
   $(".main-slider").owlCarousel({
     items: 4,
     margin: 30,
