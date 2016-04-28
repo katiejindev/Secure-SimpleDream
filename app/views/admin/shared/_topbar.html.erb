@@ -1,0 +1,14 @@
+<nav class="topbar">
+  <div class="logo">
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+  </div>
+
+  <div class="button-container">
+    <ul>
+      <li><%= link_to "Sign Out", destroy_admin_session_path, method: :delete %></li>
+      <li><%= link_to "Admin Home", admin_path %></li>
+    </ul>
+  </div>
+</nav>
