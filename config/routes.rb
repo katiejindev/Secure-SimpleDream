@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
   resources :categories, only: [:index, :show]
 
+  #ADMIN STUFF
+  get 'admin', to: 'admin/admins#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
