@@ -1,1 +1,19 @@
-<h1>Admin::Products Index</h1>
+<h1 class="title">Products</h1>
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr data-href="<%= admin_product_url product %>">
+        <td><%= product.SKU %></td>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
