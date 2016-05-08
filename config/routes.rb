@@ -18,6 +18,10 @@ Rails.application.routes.draw do
   #ADMIN STUFF
   get 'admin', to: 'admin/admins#index'
 
+  namespace :admin do
+    resources :products
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
