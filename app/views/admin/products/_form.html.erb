@@ -1,0 +1,45 @@
+<%= form_for @product, url: admin_products_path, html: { multipart: true } do |f| %>
+  <% if @product.errors.any? %>
+    <div class="error_explanation">
+      <ul>
+        <% @product.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </p>
+
+  <p>
+  <%= f.label :SKU %>
+  <%= f.text_field :SKU %>
+  </p>
+
+  <p>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  </p>
+
+  <p>
+  <%= f.label :featured %>
+  <%= f.check_box :featured %>
+  </p>
+
+  <p>
+  <%= f.label :product_image %>
+  <%= f.file_field :product_image %>
+  </p>
+
+  <div class="form-categories">
+    <% @categories.each do |category| %>
+      <%= check_box_tag :category_ids, category.id, @product.categories.include?(category), :name => 'product[category_ids][]' %>
+      <%= label_tag :category_ids, category.name %>
+    <% end %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
