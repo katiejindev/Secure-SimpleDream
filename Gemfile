@@ -27,6 +27,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication for users and admins
 gem 'devise'
 
+# Gem for attaching files to models
+gem "paperclip", "~> 5.0.0.beta1"
+
+# Used for s3 storage in paperclip
+gem 'aws-sdk', '>= 2.0.34'
+
 gem 'owlcarousel-rails', github: 'acrogenesis/owlcarousel-rails', branch: 'OwlCarousel2'
 
 group :development, :test do
