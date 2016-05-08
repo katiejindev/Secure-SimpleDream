@@ -55,6 +55,8 @@ class Admin::ProductsController < Admin::BaseController
   end
 
   def destroy
+    @product = Product.find(params[:id]).destroy
+    redirect_to admin_products_url
   end
 
   private
