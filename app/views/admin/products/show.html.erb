@@ -3,7 +3,7 @@
 <table class="product-show">
   <tr>
     <td class="product-image">
-      <%= image_tag @product.image_path, class: "product-show" %>
+      <%= image_tag @product.product_image.url(:original), class: "product-show" %>
     </td>
 
     <td class="product-show-details">

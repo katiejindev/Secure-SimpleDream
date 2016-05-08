@@ -16,7 +16,6 @@ class Admin::ProductsController < Admin::BaseController
     @product = Product.new(product_params)
     @categories = Category.all
     @product.categories = Category.find(params[:product][:category_ids]) unless params[:product][:category_ids].nil?
-    @product.image_path = "products/lol.jpg"
 
     if @product.save
       redirect_to admin_product_url(@product)
@@ -35,7 +34,6 @@ class Admin::ProductsController < Admin::BaseController
     @product.attributes = product_params
     @categories = Category.all
     @product.categories = Category.find(params[:product][:category_ids]) unless params[:product][:category_ids].nil?
-    @product.image_path = "products/lol.jpg"
 
     if params[:product][:category_ids]
       removed_categories = @product.categories.where("id NOT IN (?)", params[:product][:category_ids])

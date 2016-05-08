@@ -1,7 +1,7 @@
 <div class="owl-carousel owl-theme main-slider">
   <% products.each do |product| %>
     <div>
-      <%= image_tag product.slider_path %>
+      <%= image_tag product.product_image.url(:slider) %>
     </div>
   <% end %>
 </div>
