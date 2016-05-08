@@ -4,6 +4,7 @@ class Admin::ProductsController < Admin::BaseController
   end
 
   def show
+    @product = Product.find(params[:id])
   end
 
   def new
