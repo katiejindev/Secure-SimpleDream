@@ -1,5 +1,5 @@
 <%= content_tag :div, class: ["featured-product", alignment] do %>
-  <%= image_tag product.image_path %>
+  <%= image_tag product.product_image.url(:original) %>
 
   <div class="text-area">
     <%= product.description %>

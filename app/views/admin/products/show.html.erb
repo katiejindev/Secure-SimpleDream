@@ -1,0 +1,40 @@
+<h1 class="title"><%= @product.name %></h1>
+
+<table class="product-show">
+  <tr>
+    <td class="product-image">
+      <%= image_tag @product.product_image.url(:original), class: "product-show" %>
+    </td>
+
+    <td class="product-show-details">
+      <p>Name: <%= @product.name %></p>
+      <p>SKU: <%= @product.SKU %></p>
+      <p>Price: <%= @product.price %></p>
+      <% if @product.featured %>
+        <p>This product is featured in the home page</p>
+      <% end %>
+      <p>Image File: <%= @product.product_image_file_name %></p>
+    </td>
+  </tr>
+</table>
+
+<div class="product-show-description">
+  <h4>Description</h4>
+  <%= @product.description %>
+</div>
+
+<div class="controls">
+  <%= link_to "Edit", edit_admin_product_path(@product), class: "btn edit" %>
+
+  <div class="btn delete">Delete</div>
+
+  <div class="window-mask"></div>
+
+  <div class="delete-confirm">
+    <p>Are you sure you want to delete <%= @product.name %></p>
+    <%= link_to "Delete", admin_product_path(@product), method: :delete, class: "btn delete" %>
+    <div class="btn cancel">Cancel</div>
+  </div>
+</div>
+
+

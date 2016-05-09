@@ -1,0 +1,24 @@
+<h1 class="title">Products</h1>
+
+<div class="controls">
+  <%= link_to "Create New Product", new_admin_product_path, class: "btn new" %>
+</div>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr data-href="<%= admin_product_url product %>">
+        <td><%= product.SKU %></td>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

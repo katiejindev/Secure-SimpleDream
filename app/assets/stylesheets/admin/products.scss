@@ -1,0 +1,27 @@
+body.admin {
+  img.product-show {
+    width: 100%;
+  }
+
+  table.product-show {
+    vertical-align: middle;
+    width: 100%;
+
+    td.product-image {
+      width: 25%;
+    }
+
+    td.product-show-details {
+      background: whitesmoke;
+      padding-left: 30px;
+    }
+  }
+
+  div.product-show-description {
+    background: whitesmoke;
+    padding: 20px;
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
