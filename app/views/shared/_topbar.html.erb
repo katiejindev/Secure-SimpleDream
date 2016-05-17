@@ -5,6 +5,11 @@
     <% end %>
   </div>
 
+  <div class="language-select">
+    <%= locale_control :en %>
+    <%= locale_control :fr %>
+  </div>
+
   <div class="button-container">
     <ul>
       <li><%= link_to "Client Login", new_client_session_path %></li>
