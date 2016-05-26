@@ -1,0 +1,22 @@
+<h1 class="title">Manage Admins</h1>
+
+<div class="controls">
+  <%= link_to "Create New Admin", new_admin_admin_account_path, class: "btn new" %>
+</div>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Security Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @admins.each do |admin| %>
+      <tr data-href="<%= edit_admin_admin_account_url admin %>">
+        <td><%= admin.email %></td>
+        <td><%= admin.security_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

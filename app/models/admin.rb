@@ -4,4 +4,13 @@ class Admin < ActiveRecord::Base
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable,
          :timeoutable
+
+  def security_name
+    case priority
+    when 0
+      "Top Level Admin"
+    when 1
+      "Standard Admin"
+    end
+  end
 end
