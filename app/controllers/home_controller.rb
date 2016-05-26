@@ -6,11 +6,4 @@ class HomeController < ApplicationController
 
   def about
   end
-
-  def login
-  end
-
-  def attempt_login
-    render 'login'
-  end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :clients
   devise_for :admins
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,9 +8,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'About', to: 'home#about', as: 'about'
-
-  get 'login' => 'home#login'
-  post 'login' => 'home#attempt_login'
 
   resources :products, only: [:index, :show]
 
