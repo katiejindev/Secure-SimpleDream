@@ -1,4 +1,4 @@
-<h1 class="title">Our Products</h1>
+<h1 class="title"><%= t('our_products_name') %></h1>
 
 <div class="owl-carousel owl-theme products-slider">
   <% @slides.each do |slide| %>
@@ -10,15 +10,6 @@
 
 <div class="about-content">
   <p>
-  From the very beginning of founding Simple Dream, our goal has been to create books and items
-  that make a positive contribution to the everyday life of the people who buy and use them.
-  Our products are designed to help you organize various aspects of your life, record your thoughts and dreams,
-  keep in touch with loved ones, preserve precious memories and souvenirs,
-  make simple moments, like walking under the rain more beautiful ... the scope of applications is almost endless.
-  </p>
-
-  <p>
-  In creating our items we always strive to achieve a balance, optimizing aesthetics with innovative functionality,
-  while keeping the price low so that anyone who would like to have them can afford to do so.
+    <%= t('our_products_intro') %>
   </p>
 </div>

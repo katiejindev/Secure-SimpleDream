@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'About', to: 'home#about', as: 'about'
+  get 'Contact', to: 'home#contact', as: 'contact'
+  post 'send_contact', to: 'home#send_contact'
 
   resources :products, only: [:index, :show]
 

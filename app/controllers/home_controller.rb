@@ -6,4 +6,15 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def contact
+  end
+
+  def send_contact
+    email = params[:email]
+    msg = params[:msg]
+
+    ContactMailer.contact_us(email, msg).deliver
+    redirect_to root_path
+  end
 end

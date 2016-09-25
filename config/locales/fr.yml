@@ -1,2 +1,27 @@
 fr:
-  hello: "Bonjour au monde!"
+  about_us_name: "A Propos"
+  about_us_intro_bold: "Simple Dream Publishing, "
+  about_us_intro_normal: "on est une maison d’édition familiale qui a vu le jour en 2003. Nous publions des items cadeaux, ainsi que toute une gamme d’articles de papeterie. En créant Simple Dream, le rêve simple que nous voulons réaliser est a à deux facettes:"
+  about_us_first: "celle de produire des livres et des articles qui contribuent positivement à la vie de tous les jours, même de façon modeste, en étant à la fois pratiques et utiles, et en apportant une touche esthétique."
+  about_us_second: "celle de vivre une vie équilibrée, en faisant en sorte que la création, la production et la distribution de nos titres ne nous éloignent ni de notre famille ni de notre développement personnel. Nous souhaitons aussi que notre activité professionnelle nous offre souplesse et liberté, et des outils qui nous aident à mieux vivre ensemble."
+  about_us_conclusion: "Après plus d’une décenie, le rêve continue de se réaliser un peu plus chaque jour. Nous vous remercions de nous avoir rendu visite sur notre site et on espère que nous avons contribué à enrichir votre vie... et que nous continuerons à le faire!"
+
+  our_products_name: "Nos Produits"
+  our_products_intro: "Depuis la création de Simple Dream, notre objectif a été de concevoir des objet de a vie quotidienne, des livres et des articles de papeterie qui contribuent de façon positive à la vie de tous les jours – en vous aidant à organiser certains aspects de votre vie – ou que vous pouvez utiliser pour noter des pensées, écrire à des êtres chers, conserver de précieux souvenirs. Ce n’est pas toujours facile, mais lors du processus créatif, nous nous efforçons d’atteindre un équilibre entre le côté esthétique et le côté pratique et innovateur, tout en gardant des prix abordables, de façon à ce que toute personne désireuse d’acquérir nos produits puisse le faire."
+
+  contact_us_name: "Contactez Nous"
+  contact_us_confirmation: "Envoyer!"
+  email: "email"
+  message: "message"
+  send: "envoyer"
+
+  client_login_name: "Accès client"
+
+  PNW_name: "Cotes Ouest"
+  PNW_description: "Notre gamme la plus récente, qui vit ses premiers balbutiements. C’est pourquoi elle se limite actuellement à quelques articles. L’objectif de cette colletion est de fournir a des artistes de premières nations locaux l’occasion de rendre leur art accessible à un plus grand nombre, tout en créant des articles représentatifs de l’esprit et la culture de cette région, et en offrant des prix abordables."
+
+  Ketto_name: "Ketto"
+  Ketto_description: "Nous sommes fiers et heureux de coopérer avec l'équipe de Ketto Desing. Leur œuvre au visuel unique est jeune et pleine de joie. La combinaison avec nos articles fonctionnels et abordables amène une goutte de fraîcheur au moments simples du quotidien."
+
+  VCC_name: "VCC"
+  VCC_description: "Nous coopérons avec certains de nos clients sur des projets promotionels, ceux-ci nous permette d;appliquer notre expertise a une autre game d’item fonctionels, tel que des primes avec achat, des cadeaux aux membres ou des articles célébrant des occasions spéciales."
