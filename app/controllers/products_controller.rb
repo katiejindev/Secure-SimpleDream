@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @slides = Slide.all
+    @products = Product.all
   end
 
   def show

@@ -1,12 +1,11 @@
 <h1 class="title"><%= t('our_products_name') %></h1>
 
-<div class="owl-carousel owl-theme products-slider">
-  <% @slides.each do |slide| %>
-    <div>
-      <%= image_tag slide.image_path %>
-    </div>
-  <% end %>
+<div class="owl-theme">
+  <div class="owl-controls">
+    <div id="custom-owl-pagination" class="owl-dots"></div>
+  </div>
 </div>
+<%= render 'shared/products_slider', products: @products %>
 
 <div class="about-content">
   <p>
