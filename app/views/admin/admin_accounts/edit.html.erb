@@ -1,0 +1,15 @@
+<h1 class="title">Edit Admin</h1>
+
+<div class="controls">
+  <%= link_to "Cancel", admin_admin_accounts_path, class: "btn cancel" %>
+
+  <% if @admin != current_admin %>
+    <div class="btn delete">Remove</div>
+    <div class="window-mask"></div>
+    <div class="delete-confirm">
+      <p>Are you sure you want to remove <%= @admin.email %></p>
+      <%= link_to "Remove", admin_admin_account_path(@admin), method: :delete, class: "btn delete" %>
+      <div class="btn cancel">Cancel</div>
+    </div>
+  <% end %>
+</div>

@@ -1,23 +1,27 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  about_us_name: "About Us"
+  about_us_intro_bold: "We, Simple Dream Publishing, "
+  about_us_intro_normal: "are a publisher of books, stationary and everyday items. Our company was founded in 2003 with two objectives in mind:"
+  about_us_first: "To publish books and items that make a positive contribution to the life of those who buy them, by offering practical and functional products with a distinct aesthetic appeal, adding a touch of art and beauty to everyday life."
+  about_us_second: "To live a more balanced life. That working at the creation, production and distribution of our products be a gratifying activity, one that does not impede our personal growth nor jeopardize our family life. We want work to still allow us the flexibility and the means to live and to enjoy a better quality of life with our family."
+  about_us_conclusion: "over a decade later, the dream is alive and blossoming. We thank you for taking the time to visit this site and we hope that, in our own small way, we have had and will continue to have the opportunity to make a positive contribution to your life."
+
+  our_products_name: "Our Products"
+  our_products_intro: "From the very beginning of founding Simple Dream, our goal has been to create books and items that make a positive contribution to the everyday life of the people who buy and use them. Our products are designed to help you organize various aspects of your life, record your thoughts and dreams, keep in touch with loved ones, preserve precious memories and souvenirs, make simple moments, like walking under the rain more beautiful ... the scope of applications is almost endless. In creating our items we always strive to achieve a balance, optimizing aesthetics with innovative functionality, while keeping the price low so that anyone who would like to have them can afford to do so."
+
+  contact_us_name: "Contact Us"
+  contact_us_confirmation: "Sent!"
+  email: "email"
+  message: "message"
+  send: "send"
+
+  client_login_name: "Client Login"
+
+  PNW_name: "Pacific North West"
+  PNW_description: "Our intent in creating the Pacific North West line of item has been to provide a new medium for local artists to make their art accessible to a greater public. These items are, expressing some of the spirit and culture of our region, while been useful in your everyday life activities."
+
+  Ketto_name: "Ketto"
+  Ketto_description: "We are proud and happy to cooperate with the team at Ketto Desing. Their unique art is youthful and full of joy. Combining it with our functional and affordable items results in had a drop of whimsical freshness to simple everyday moments."
+
+  VCC_name: "Value Creating Communication"
+  VCC_description: "We cooperates with some of our clients on specific projects, that allows our expertise in developing functional, beautiful items to be leveraged in the creation of unit circumstantial items, such as gift with purchase, gift to members and items celebrating special occasions."

@@ -10,6 +10,9 @@
       <li><%= link_to "Sign Out", destroy_admin_session_path, method: :delete %></li>
       <li><%= link_to "Admin Home", admin_path %></li>
       <li><%= link_to "Products", admin_products_path%></li>
+      <% if top_level? %>
+        <li><%= link_to "Admins", admin_admin_accounts_path%></li>
+      <% end %>
     </ul>
   </div>
 </nav>

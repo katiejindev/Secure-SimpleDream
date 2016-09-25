@@ -1,0 +1,18 @@
+<h1 class="title"><%= t('contact_us_name') %></h1>
+<div class="contact-form">
+  <%= form_tag send_contact_path do %>
+    <div class="field">
+      <%= label_tag 'email', t('email') %>
+      <%= email_field_tag 'email', nil, autofocus: true %>
+    </div><br>
+
+    <div class="field">
+      <%= label_tag 'msg', t('message') %>
+      <%= text_area_tag 'msg', nil, rows: 5, cols: 50 %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag t('send') %>
+    <div>
+  <% end %>
+</div>

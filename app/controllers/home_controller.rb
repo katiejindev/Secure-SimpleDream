@@ -7,10 +7,14 @@ class HomeController < ApplicationController
   def about
   end
 
-  def login
+  def contact
   end
 
-  def attempt_login
-    render 'login'
+  def send_contact
+    email = params[:email]
+    msg = params[:msg]
+
+    ContactMailer.contact_us(email, msg).deliver
+    redirect_to root_path
   end
 end

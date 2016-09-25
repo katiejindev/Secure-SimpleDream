@@ -5,20 +5,25 @@
     <% end %>
   </div>
 
+  <div class="language-select">
+    <%= locale_control :en %>
+    <%= locale_control :fr %>
+  </div>
+
   <div class="button-container">
     <ul>
-      <li><%= link_to "Client Login", login_path %></li>
+      <li><%= link_to t('client_login_name'), new_client_session_path %></li>
 
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#"><%= t('contact_us_name') %></a></li>
 
-      <li><%= link_to about_path do %>About Us<% end %></li>
+      <li><%= link_to t('about_us_name'), about_path %></li>
 
       <li class="dropdown">
-        <%= link_to "Our Products", products_path %>
+        <%= link_to t('our_products_name'), products_path %>
 
         <ul>
           <% Category.all.each do |category| %>
-            <li><%= link_to category.name, category_path(category) %></li>
+            <li><%= link_to t(category.name), category_path(category) %></li>
           <% end %>
         </ul>
       </li>
