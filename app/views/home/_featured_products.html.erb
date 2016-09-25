@@ -1,5 +1,5 @@
 <div class="featured-products">
-  <h1 class="subtitle">Featured Products</h1>
+  <h1 class="subtitle"><%= t('featured_products') %></h1>
   <% products.each_with_index do |product, index| %>
     <%= render 'featured_product', product: product, alignment: (index%2).even? ? "left" : "right" %>
   <% end %>
