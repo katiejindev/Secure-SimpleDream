@@ -15,6 +15,15 @@ Rails.application.configure do
   }
 
   config.action_mailer.default_url_options = { host: 'ancient-journey-7720.heroku.com' }
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.bizmail.yahoo.ca',
+    port: 587,
+    domain: 'www.simpledream.ca',
+    user_name: ENV['mail_user'],
+    password: ENV['mail_pass'],
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
 
   # Code is not reloaded between requests.
   config.cache_classes = true

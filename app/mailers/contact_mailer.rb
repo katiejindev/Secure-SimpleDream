@@ -3,6 +3,6 @@ class ContactMailer < ApplicationMailer
     @email = email
     @message = message
 
-    mail(to: @email, subject: 'Client Contact')
+    mail(to: 'keb@simpledream.ca', subject: 'Client Contact')
   end
 end
